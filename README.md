@@ -14,6 +14,7 @@ In this explanation, I'll describe a regular expression used to validate usernam
 - [Bracket Expressions](#bracket-expressions)
 - [References](#references)
 - [Acceptance-Criteria](#acceptance-criteria)
+- [GIST](#gist)
 - [Author](#author)
 
 ## Regex Components
@@ -79,6 +80,9 @@ THEN I find a detailed explanation of what a specific component of the regex doe
 WHEN I reach the end of the tutorial
 THEN I find a section about the author and a link to the author’s GitHub profile
 
+## GIST
+
+<script src="https://gist.github.com/LONZEE/39347ca2f464e0324b1c4d7e2b21b8d1.js"></script>
 
 ## Author
 
