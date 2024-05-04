@@ -82,7 +82,7 @@ THEN I find a section about the author and a link to the author’s GitHub profi
 
 ## GIST
 
-<script src="https://gist.github.com/LONZEE/39347ca2f464e0324b1c4d7e2b21b8d1.js"></script>
+https://gist.github.com/LONZEE/39347ca2f464e0324b1c4d7e2b21b8d1.js
 
 ## Author
 
