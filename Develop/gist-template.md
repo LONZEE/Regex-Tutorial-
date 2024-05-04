@@ -1,26 +1,39 @@
-# Title (replace with your title)
+# REGEX-TUTORIAL
 
-Introductory paragraph (replace this with your text)
+Regular expressions are a fundamental tool for text processing and pattern matching in programming. By mastering regex, coding bootcamp students can enhance their problem-solving skills and efficiency in various projects and tasks. With practice and experimentation, you'll find regex to be an invaluable asset throughout your coding journey.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this explanation, I'll describe a regular expression used to validate usernames. The regex ensures that the entered username follows certain criteria such as length restrictions and allowable characters. Here's a code snippet of the regex:
 
 ## Table of Contents
 
+- [Regex](#regex-components)
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [References](#references)
+- [Acceptance-Criteria](#acceptance-criteria)
+- [Author](#author)
 
 ## Regex Components
+
+A regex is considered a literal, so the pattern must be wrapped in slash characters (/). If we examine the “Matching a Username” regex, you'll see that this is true:
+
+/^[a-z0-9_-]{3,16}$/
+
+Matching a Username
+
+1. ^ : This caret symbol denotes the start of the string. It indicates that the username must start from the beginning of the string.
+2. [a-zA-Z0-9_-] : This character class specifies the valid characters that can be used in the username. It includes:
+
+* Lowercase letters (a-z)
+* Uppercase letters (A-Z)
+* Digits (0-9)
+* Underscore (_) and hyphen (-)
+
+3. {3,16} : This quantifier specifies the allowable length range for the username. It means the username must be between 3 and 16 characters long.
+4. $ : This dollar sign denotes the end of the string. It indicates that the username must end at this point in the string.
 
 ### Anchors
 
@@ -34,24 +47,41 @@ These anchors are valuable when you need to specify where in a line a match shou
 
 ### Quantifiers
 
-### OR Operator
-
-### Character Classes
-
-### Flags
-
-### Grouping and Capturing
+{3,16}: This quantifier specifies the allowable length range for the username. It means the preceding character class [a-z0-9_-] must be repeated between 3 and 16 times. So, the username must contain between 3 and 16 characters composed of any combination of lowercase letters, digits, underscore, or hyphen.
 
 ### Bracket Expressions
 
-### Greedy and Lazy Match
+Square brackets ([ ]) in regex denote bracket expressions or positive character groups, specifying the characters we want to match. For instance, [abc] seeks a string containing "a", "b", or "c", irrespective of string length.
 
-### Boundaries
+A hyphen (-) between alphanumeric characters signifies a range, e.g., [a-c] and [abc] both seek the same characters.
 
-### Back-references
+In our username regex example:
 
-### Look-ahead and Look-behind
+[a-z]: Matches any lowercase letter from a to z. To include uppercase, use [a-zA-Z].
+[0-9]: Matches any digit from 0 to 9.
+[_-]: Matches an underscore or hyphen, both termed special characters. These non-alphanumeric characters are included by placing them after alphanumeric ranges within the brackets.
+Combined as [a-z0-9_-], it matches strings containing any combination of lowercase letters, digits, underscores, or hyphens in any order. Note, the pattern doesn't require all criteria to be met; any is sufficient.
+
+### References
+
+https://coding-boot-camp.github.io/full-stack/computer-science/regex-tutorial
+https://www.regular-expressions.info/repeat.html
+
+## Acceptance Criteria
+
+GIVEN a regex tutorial
+WHEN I open the tutorial
+THEN I see a descriptive title and introductory paragraph explaining the purpose of the tutorial, a summary describing the regex featured in the tutorial, a table of contents linking to different sections that break down each component of the regex and explain what it does, and a section about the author with a link to the author’s GitHub profile
+WHEN I click on the links in the table of contents
+THEN I am taken to the corresponding sections of the tutorial
+WHEN I read through each section of the tutorial
+THEN I find a detailed explanation of what a specific component of the regex does
+WHEN I reach the end of the tutorial
+THEN I find a section about the author and a link to the author’s GitHub profile
+
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Github:https://github.com/LONZEE
+
+
